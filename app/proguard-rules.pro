@@ -1,0 +1,5 @@
+-keep class com.shockwave.** { *; }
+-keep class com.github.barteksc.** { *; }
+-keep class com.tom_roush.** { *; }
+-dontwarn com.tom_roush.**
+-dontwarn org.bouncycastle.**
