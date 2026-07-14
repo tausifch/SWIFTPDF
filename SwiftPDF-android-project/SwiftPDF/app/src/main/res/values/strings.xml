@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SwiftPDF</string>
+    <string name="open_pdf">Open PDF</string>
+    <string name="all_books">All Books</string>
+    <string name="favorites">Favorites</string>
+    <string name="empty_library">No PDFs yet.\nTap "Open PDF" to add your first book.</string>
+    <string name="empty_favorites">No favorites yet.\nTap the ★ on any book to add it here.</string>
+    <string name="page_progress">Page %1$d of %2$d</string>
+    <string name="not_opened_yet">Not opened yet</string>
+    <string name="remove_from_library">Remove from library</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search in document…</string>
+    <string name="night_mode">Night mode</string>
+    <string name="go_to_page">Go to page</string>
+    <string name="next_match">Next result</string>
+    <string name="prev_match">Previous result</string>
+    <string name="indexing">Indexing document for search…</string>
+    <string name="no_results">No results found</string>
+    <string name="results_title">%1$d pages with matches</string>
+    <string name="result_row">Page %1$d: %2$s</string>
+    <string name="search_first">Search for something first</string>
+    <string name="match_position">Result %1$d of %2$d</string>
+    <string name="search_unavailable">Search is not available for this PDF (scanned image?)</string>
+    <string name="load_error">Could not open this PDF</string>
+    <string name="added_favorite">Added to favorites ★</string>
+    <string name="removed_favorite">Removed from favorites</string>
+</resources>

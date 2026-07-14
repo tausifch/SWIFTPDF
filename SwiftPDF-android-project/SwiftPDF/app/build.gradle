@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.ccep.swiftpdf'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.ccep.swiftpdf"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions { jvmTarget = '17' }
+    buildFeatures { viewBinding true }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.7.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+
+    // Blazing-fast PDF rendering (pdfium engine, hardware-accelerated)
+    implementation 'com.github.mhiew:android-pdf-viewer:3.2.0-beta.3'
+
+    // Text extraction engine for in-PDF search
+    implementation 'com.tom-roush:pdfbox-android:2.0.27.0'
+
+    // Lightweight JSON persistence for favorites / recents
+    implementation 'com.google.code.gson:gson:2.10.1'
+}
